@@ -1,0 +1,62 @@
+# ==============================================================================
+device_target: GPU
+
+# config
+img_width:  1024  # 1280
+img_height: 896   # 1280
+keep_ratio: True
+flip_ratio: 0.5
+expand_ratio: 1.0
+
+num_parallel_workers: 8
+python_multiprocessing: True
+mindrecord_dir: './dataset/mindrecord/'
+image_dir: './dataset/WIDER_train/images/'
+anno_path: './dataset/wider_face_split/wider_face_train_bbx_gt.txt'
+
+lr: 0.001
+momentum: 0.9
+batch_size: 1
+loss_scale: 256
+weight_decay: 0.00001
+epoch_size: 10
+
+save_checkpoint_path: './ckpts'
+
+# bbox_assign_sampler
+neg_iou_thr: 0.3
+pos_iou_thr: 0.7
+min_pos_iou: 0.3
+num_gts: 128
+num_expected_neg: 256
+num_expected_pos: 128
+
+# train proposal
+rpn_proposal_nms_across_levels: False
+rpn_proposal_nms_pre: 2000
+rpn_proposal_nms_post: 2000
+rpn_proposal_max_num: 2000
+rpn_proposal_nms_thr: 0.7
+rpn_proposal_min_bbox_size: 0
+
+# test proposal
+rpn_nms_across_levels: False
+rpn_nms_pre: 1000
+rpn_nms_post: 1000
+rpn_max_num: 1000
+rpn_nms_thr: 0.7
+rpn_min_bbox_min_size: 0
+test_score_thr: 0.05
+test_iou_thr: 0.5
+test_max_per_img: 100
+test_batch_size: 1
+
+# loss weight
+loss_reg_weight: 1
+loss_cls_weight: 1
+
+# anchor
+anchor_scales: [[2, 4], [4, 8], [8, 16]]
+anchor_ratios: [1.0]
+anchor_base_sizes: [8, 16, 32]
+num_anchors: 2
