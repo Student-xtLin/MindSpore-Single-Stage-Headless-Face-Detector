@@ -20,8 +20,8 @@
 
 ### 模型与数据集下载
 
-1. vgg预训练模型：[ckpts/vgg.ckpt](https://pan.baidu.com/s/1D3T8Nkf9ha9gKCu4YqGyLA?pwd=2333 )   提取码：2333 
-2. Mindrecord数据集：[dataset/mindrecord/](https://pan.baidu.com/s/1p34D-sdCDfS7_4TY52psKg?pwd=2333)  提取码：2333 
+1. vgg预训练模型：[ckpts/vgg.ckpt](https://pan.baidu.com/s/1p34D-sdCDfS7_4TY52psKg?pwd=2333)   提取码：2333 
+2. Mindrecord数据集：[dataset/mindrecord/](https://pan.baidu.com/s/1D3T8Nkf9ha9gKCu4YqGyLA?pwd=2333)  提取码：2333 
    原始数据集下载地址：http://shuoyang1213.me/WIDERFACE/
    *注：数据集存放的路径位置需要与default_config.yaml中一致*
 
@@ -31,7 +31,7 @@ image_dir: './dataset/WIDER_train/images/'
 anno_path: './dataset/WIDER_annotation/wider_face_train_bbx_gt.txt'
 ```
 
-3. 项目提供的训练好的SSH模型:[ckpts/ckpt_0/ssh.ckpt](https://pan.baidu.com/s/1D3T8Nkf9ha9gKCu4YqGyLA?pwd=2333)  提取码：2333 
+3. 项目提供的训练好的SSH模型:[ckpts/ckpt_0/ssh.ckpt](https://pan.baidu.com/s/1p34D-sdCDfS7_4TY52psKg?pwd=2333)  提取码：2333 
 
 
 
