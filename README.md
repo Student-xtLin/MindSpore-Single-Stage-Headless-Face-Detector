@@ -4,7 +4,7 @@
 
 论文地址：[ICCV 2017 Open Access Repository (thecvf.com)](https://openaccess.thecvf.com/content_iccv_2017/html/Najibi_SSH_Single_Stage_ICCV_2017_paper.html)
 
-项目地址：
+项目地址：[MindSpore-Single-Stage-Headless-Face-Detector](https://github.com/Student-xtLin/MindSpore-Single-Stage-Headless-Face-Detector)
 
 ## Quick Start
 
