@@ -14,7 +14,7 @@
 
 规格使用GP Tnt004 GPU(16GB显存）。
 
-具体环境要求见[requirements.txt](.\requirements.txt)文件
+具体环境要求见[requirements.txt](./requirements.txt)文件
 
 
 
@@ -37,7 +37,7 @@ anno_path: './dataset/WIDER_annotation/wider_face_train_bbx_gt.txt'
 
 ### 训练
 
-训练的相关的超参数设置在[default_config.yaml](.\default_config.yaml)文件中。
+训练的相关的超参数设置在[default_config.yaml](./default_config.yaml)文件中。
 
 解压vgg预训练模型（vgg.ckpt）至项目目录下（./vgg.ckpt），运行下面的命令，loss会被存在loss_*.log中。
 
@@ -72,11 +72,11 @@ python test.py
 
 原图
 
-![image](.\test\20_Family_Group_Family_Group_20_32.jpg)
+![image](./test/20_Family_Group_Family_Group_20_32.jpg)
 
 人脸检测后的结果图
 
-![image](.\test_result\20_Family_Group_Family_Group_20_32_result.jpg)
+![image](./test_result/20_Family_Group_Family_Group_20_32_result.jpg)
 
 
 
@@ -155,7 +155,7 @@ SSH：Single Stage Headless Face Detector。不同于two-stages （先提供候�
 
 规格使用GP Tnt004 GPU(16GB显存）。
 
-具体环境要求见[requirements.txt](.\ssh-pytorch\requirements.txt)或[pytorch.yml](.\ssh-pytorch\pytorch.yml)文件
+具体环境要求见[requirements.txt](./ssh-pytorch/requirements.txt)或[pytorch.yml](./ssh-pytorch/pytorch.yml)文件
 
 环境安装完成后，需要运行下面的命令：
 
@@ -182,9 +182,9 @@ data
 
 ##### 训练过程截图
 
-训练过程的截图和loss截图如下图所示。具体log文件见[log](.\ssh-pytorch\train.log)。
+训练过程的截图和loss截图如下图所示。具体log文件见[log](./ssh-pytorch/train.log)。
 
-![训练过程截图](.\assets\pytorch版本训练过程截图.jpg)
+![训练过程截图](./assets/pytorch版本训练过程截图.jpg)
 
 ##### 测试
 
@@ -198,11 +198,11 @@ data
 
 原图
 
-![demo](.\assets\demo.jpg)
+![demo](./assets/demo.jpg)
 
 人脸检测后
 
-![demo_result](.\assets\demo_result.jpg)
+![demo_result](./assets/demo_result.jpg)
 
 
 
